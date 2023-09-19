@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="valid.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+    <body>
+	
+        <div class="container"> 
+         
+            <h1 class="title" id="login"> LOGIN </h1> 
+            <form id="form" action="admission.html" method="post">
+                
+            <div class="userInfo">
+                <div class="inputBox">
+                    <label>EMAIL</label>       
+            <input type="text" name="email" placeholder="Enter email" id="email" oninput="validateEmail()" required>
+            <span id="emailError" style="color: rgb(241, 10, 10);"></span>
+                </div>
+                <div class="inputBox">
+                    <label>PASSWORD</label>
+            <input type="password" name="password" placeholder="Enter Password" id="pass" oninput="validatePassword()" required> 
+            <span id="passError" style="color: rgb(230, 11, 11);"></span>
+                </div>
+            </div>
+             
+              <div class="btnBox">
+            <button type="submit" >
+                <a href="admission.html" onsubmit="submitForm()">Login</a>
+            </button>
+            
+      
+             
+        </form>
+        </div>
+    </body>
+</html>
